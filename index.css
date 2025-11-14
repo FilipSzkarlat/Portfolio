@@ -336,9 +336,23 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .nav {
+    position: sticky;
+    top: 0;
     display:flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
+    margin-right: 100px;
+}
+
+.nav ul{
+    background-color: #000;
+    z-index: 100;
+    padding: 0 100px;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border: solid 3px #ff3258;
+    border-right: none;
+    box-shadow: #000 0px 0px 20px;
 }
 
 .nav__items {
